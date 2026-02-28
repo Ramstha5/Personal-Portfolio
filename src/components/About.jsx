@@ -8,32 +8,16 @@ const About = () => {
           <h2 className={styles.h2_heading}>about</h2>
           <div>
             <p className={styles.description}>
-              I'm a full stack developer passionate about crafting accessible,
-              user-friendly web applications that combine clean design with
-              solid engineering. I enjoy working at the intersection of
-              front-end design and back-end logic, creating experiences that are
-              not only visually polished but also robust, responsive, and
-              scalable.
+              I'm a Data Scientist passionate about turning data into actionable insights and intelligent solutions. I enjoy working at the intersection of data analysis, machine learning, and practical applications, creating models and dashboards that are not only accurate but also impactful and scalable.
             </p>
             <p className={styles.description}>
-              Currently, I'm working as a Front-End Developer at Profox Studio,
-              where I contribute to building and maintaining modern UI
-              components. At the same time, I'm actively expanding my backend
-              development skills using Python and Django, developing RESTful
-              APIs and managing server-side functionality for full-featured
-              applications.
+              Currently, I'm enhancing my skills in Python, statistics, and machine learning, building predictive models, and analyzing complex datasets to extract meaningful patterns. I also apply my background in software development to build data pipelines, automate workflows, and manage database-driven projects efficiently.
             </p>
             <p className={styles.description}>
-              I've built several personal projects that combine both frontend
-              and backend technologies, allowing me to explore concepts like
-              responsive design, accessibility, and database-driven development.
-              My background in design also strengthens my attention to detail
-              and user experience.
+              I've completed several personal projects that combine data collection, cleaning, analysis, and visualization, allowing me to explore concepts like feature engineering, model optimization, and data storytelling. My experience with programming and design strengthens both my technical skills and attention to detail.
             </p>
             <p className={styles.description}>
-              In my spare time, I enjoy reading, exploring design trends,
-              studying data science, and occasionally running around Hyrule
-              searching for Korok seeds.
+              In my spare time, I enjoy exploring data science trends, reading about AI and analytics, building small ML projects, and occasionally taking breaks with some light gaming adventures.
             </p>
           </div>
         </div>

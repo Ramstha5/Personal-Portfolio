@@ -9,7 +9,7 @@ const DEFAULT_EXP = [
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet quo ducimus in velit veniam, laboriosam inventore amet aut nostrum?...",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "Data & Databases", "Machine Learning & AI"],
     },
   },
   {
@@ -20,7 +20,7 @@ const DEFAULT_EXP = [
     description:
       " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet quo ducimus in velit veniam, laboriosam inventore amet aut nostrum?...",
     language: {
-      language_name: ["HTML", "Bootstrap", "React"],
+      language_name: ["Programming & Libraries:", "Data & Databases", "Machine Learning & AI"],
     },
   },
 ];

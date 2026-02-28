@@ -7,10 +7,10 @@ const DEFAULT_PRO = [
     project_image: "images/project1.jpg",
     title: "Food Ordering System",
     description:
-      "Developed a full-stack Online Food Ordering System using React and Django. Implemented features like user authentication, dynamic menus, and cart management. Focused on building a responsive, accessible, and user-friendly interface.",
+"Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
     made: "Upstatement",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "Data & Databases", "DS & ML"],
     },
     link: "abc.com",
   },
@@ -20,10 +20,10 @@ const DEFAULT_PRO = [
     project_image: "images/project1.jpg",
     title: "Food Ordering System",
     description:
-      "Developed a full-stack Online Food Ordering System using React and Django. Implemented features like user authentication, dynamic menus, and cart management. Focused on building a responsive, accessible, and user-friendly interface.",
+     "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
     made: "Upstatement",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "Data & Databases", "DS & ML"],
     },
     link: "abc.com",
   },
@@ -33,10 +33,10 @@ const DEFAULT_PRO = [
     project_image: "images/project1.jpg",
     title: "Food Ordering System",
     description:
-      "Developed a full-stack Online Food Ordering System using React and Django. Implemented features like user authentication, dynamic menus, and cart management. Focused on building a responsive, accessible, and user-friendly interface.",
+     "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
     made: "Upstatement",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "Data & Databases", "DS & ML"],
     },
     link: "abc.com",
   },
@@ -46,10 +46,10 @@ const DEFAULT_PRO = [
     project_image: "images/project1.jpg",
     title: "Food Ordering System",
     description:
-      "Developed a full-stack Online Food Ordering System using React and Django. Implemented features like user authentication, dynamic menus, and cart management. Focused on building a responsive, accessible, and user-friendly interface.",
+     "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
     made: "Upstatement",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "DS & ML"],
     },
     link: "abc.com",
   },
@@ -59,10 +59,10 @@ const DEFAULT_PRO = [
     project_image: "images/project1.jpg",
     title: "Food Ordering System",
     description:
-      "Developed a full-stack Online Food Ordering System using React and Django. Implemented features like user authentication, dynamic menus, and cart management. Focused on building a responsive, accessible, and user-friendly interface.",
+     "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
     made: "Upstatement",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "DS & ML"],
     },
     link: "abc.com",
   },
@@ -72,10 +72,10 @@ const DEFAULT_PRO = [
     project_image: "images/project1.jpg",
     title: "Food Ordering System",
     description:
-      "Developed a full-stack Online Food Ordering System using React and Django. Implemented features like user authentication, dynamic menus, and cart management. Focused on building a responsive, accessible, and user-friendly interface.",
+     "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
     made: "Upstatement",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "DS & ML"],
     },
     link: "abc.com",
   },
@@ -85,10 +85,10 @@ const DEFAULT_PRO = [
     project_image: "images/project1.jpg",
     title: "Food Ordering System",
     description:
-      "Developed a full-stack Online Food Ordering System using React and Django. Implemented features like user authentication, dynamic menus, and cart management. Focused on building a responsive, accessible, and user-friendly interface.",
+     "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
     made: "Upstatement",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "Data & Databases", "DS & ML"],
     },
     link: "abc.com",
   },
@@ -98,10 +98,10 @@ const DEFAULT_PRO = [
     project_image: "images/project1.jpg",
     title: "Food Ordering System",
     description:
-      "Developed a full-stack Online Food Ordering System using React and Django. Implemented features like user authentication, dynamic menus, and cart management. Focused on building a responsive, accessible, and user-friendly interface.",
+     "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
     made: "Upstatement",
     language: {
-      language_name: ["HTML", "Bootstrap", "React", "JavaScript"],
+      language_name: ["Programming & Libraries:", "Data & Databases", "DS & ML"],
     },
     link: "abc.com",
   },
