@@ -46,3 +46,10 @@ h2 {
   max-width: 20rem;
   letter-spacing: 0.5px;
 }
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+}
