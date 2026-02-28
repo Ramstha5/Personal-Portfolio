@@ -22,7 +22,7 @@ const SocialMedia = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/ram-shrestha-43a93727b/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -33,7 +33,7 @@ const SocialMedia = () => {
           </li>
           <li>
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/chrestharam"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -44,7 +44,7 @@ const SocialMedia = () => {
           </li>
           <li>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/chrestharam"
               target="_blank"
               rel="noopener noreferrer"
             >
