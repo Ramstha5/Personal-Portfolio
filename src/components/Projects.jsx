@@ -17,10 +17,20 @@ const Projects = () => {
 
           <div className="row mt-5">
             <div className="col-md-12">
-              <a href="/project-list" className={styles.project_link}>
+              {/* <a href="/project-list" className={styles.project_link}>
                 <span className={styles.project}>
                   View Full Project Archive
                 </span>
+                <span className={styles.arrow}>
+                  <FaArrowRight />
+                </span>
+              </a> */}
+              <a
+                href="/project-list"
+                className={styles.project_link}
+                rel="noopener noreferrer"
+              >
+                <span className={styles.project}>View Full Project Archive</span>
                 <span className={styles.arrow}>
                   <FaArrowRight />
                 </span>
