@@ -27,6 +27,7 @@ const Projects = () => {
               </a> */}
               <a
                 href="/project-list"
+                target="blank"
                 className={styles.project_link}
                 rel="noopener noreferrer"
               >
