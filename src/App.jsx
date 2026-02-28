@@ -98,7 +98,7 @@ const App = () => {
       // large enough circle to cover full screen
       const diagonal = Math.sqrt(window.innerWidth**2 + window.innerHeight**2);
       setClip(`circle(${diagonal}px at ${x}px ${y}px)`);
-    }, 400); // 400ms hold delay
+    }, 600); // 400ms hold delay
   };
 
   const endHold = () => {
