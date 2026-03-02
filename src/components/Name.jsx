@@ -8,9 +8,7 @@ const Name = () => {
         <div className={styles.name_wrap}>
           <h1 className={styles.name}>Ram Shrestha - Data Scientist in Nepal</h1>
           <h2>Data Scientist</h2>
-          <p className={styles.des}>
-            I build data-driven solutions that transform raw data into meaningful insights and intelligent decisions.
-          </p>
+            <p>Hello! I am Ram Shrestha, a passionate Data Scientist from Nepal. I specialize in Machine Learning, Python, and Data Analytics. I create projects that solve real-world problems with data.</p>
         </div>
       </div>
     </>
