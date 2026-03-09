@@ -14,6 +14,8 @@ const SocialMedia = () => {
               href="https://github.com/Ramstha5?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+              title="GitHub"
             >
               <span className={styles.social_icon}>
                 <FaGithub />
@@ -25,6 +27,7 @@ const SocialMedia = () => {
               href="https://www.linkedin.com/in/ram-shrestha-43a93727b/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
             >
               <span className={styles.social_icon}>
                 <IoLogoLinkedin />
@@ -36,6 +39,7 @@ const SocialMedia = () => {
               href="https://www.facebook.com/chrestharam"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Facebook Profile"
             >
               <span className={styles.social_icon}>
                 <FaFacebookSquare />
@@ -47,6 +51,7 @@ const SocialMedia = () => {
               href="https://www.instagram.com/chrestharam"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram Profile"
             >
               <span className={styles.social_icon}>
                 <FaInstagramSquare />
