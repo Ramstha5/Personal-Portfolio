@@ -4,7 +4,7 @@ const DEFAULT_PRO = [
   {
     id: "1",
     year: "2025",
-    project_image: "images/project1.jpg",
+    project_image: "images/project1.webp",
     title: "Food Ordering System",
     description:
 "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
@@ -17,7 +17,7 @@ const DEFAULT_PRO = [
   {
     id: "2",
     year: "2025",
-    project_image: "images/project1.jpg",
+    project_image: "images/project1.webp",
     title: "Food Ordering System",
     description:
      "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
@@ -30,7 +30,7 @@ const DEFAULT_PRO = [
   {
     id: "3",
     year: "2025",
-    project_image: "images/project1.jpg",
+    project_image: "images/project1.webp",
     title: "Food Ordering System",
     description:
      "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
@@ -43,7 +43,7 @@ const DEFAULT_PRO = [
   {
     id: "4",
     year: "2025",
-    project_image: "images/project1.jpg",
+    project_image: "images/project1.webp",
     title: "Food Ordering System",
     description:
      "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
@@ -56,7 +56,7 @@ const DEFAULT_PRO = [
   {
     id: "5",
     year: "2025",
-    project_image: "images/project1.jpg",
+    project_image: "images/project1.webp",
     title: "Food Ordering System",
     description:
      "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
@@ -69,7 +69,7 @@ const DEFAULT_PRO = [
   {
     id: "6",
     year: "2025",
-    project_image: "images/project1.jpg",
+    project_image: "images/project1.webp",
     title: "Food Ordering System",
     description:
      "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
@@ -82,7 +82,7 @@ const DEFAULT_PRO = [
   {
     id: "7",
     year: "2025",
-    project_image: "images/project1.jpg",
+    project_image: "images/project1.webp",
     title: "Food Ordering System",
     description:
      "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",
@@ -95,7 +95,7 @@ const DEFAULT_PRO = [
   {
     id: "8",
     year: "2025",
-    project_image: "images/project1.jpg",
+    project_image: "images/project1.webp",
     title: "Food Ordering System",
     description:
      "Developed a data-driven Online Food Ordering System analyzing user behavior and order patterns. Collected and cleaned transactional data, applied exploratory data analysis (EDA) to identify trends, and built predictive models to optimize menu recommendations. Focused on creating insightful visualizations and actionable data insights.",

@@ -72,7 +72,7 @@ const App = () => {
   style={{
     position: "fixed",
     inset: 0,
-    backgroundImage: "url('/images/profile.jpeg')",
+    backgroundImage: "url('/images/profile.webp')",
     backgroundSize: "cover",
     backgroundPosition: "top",
     clipPath: clip,
@@ -83,7 +83,7 @@ const App = () => {
 >
   {/* यो अदृश्य इमेजले fetchpriority लागू गराउँछ */}
   <img 
-    src="/images/profile.jpeg" 
+    src="/images/profile.webp" 
     fetchpriority="high" 
     style={{ display: 'none' }} 
     alt="" 

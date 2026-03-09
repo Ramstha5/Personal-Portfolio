@@ -84,6 +84,8 @@ h6,
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+  aspect-ratio: attr(width) / attr(height);
 }
 
 p {
@@ -144,6 +146,7 @@ main {
   header {
     position: unset;
     width: 100vw;
+    padding: 3rem 0;
   }
   main {
     padding: 0;
