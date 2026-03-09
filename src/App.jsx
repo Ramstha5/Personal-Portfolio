@@ -85,7 +85,7 @@ const App = () => {
     src="/images/profile.webp" 
     fetchpriority="high" 
     style={{ display: 'none' }} 
-    alt="" 
+    alt="Ram Shrestha Data Scientist Nepal" 
   />
 </div>
 
