@@ -81,7 +81,6 @@ const App = () => {
     zIndex: 9999,
   }}
 >
-  {/* यो अदृश्य इमेजले fetchpriority लागू गराउँछ */}
   <img 
     src="/images/profile.webp" 
     fetchpriority="high" 
