@@ -73,7 +73,7 @@ const App = () => {
           position: "fixed",
           inset: 0,
           backgroundImage:
-            "url('/images/profile.JPG')",
+            "url('/images/profile.jpeg')",
           backgroundSize: "cover",   // full width & height
           backgroundPosition: "top",
           clipPath: clip,
