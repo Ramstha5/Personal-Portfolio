@@ -1,37 +1,24 @@
-import { createSlice } from "@reduxjs/toolkit";
 
-const DEFAULT_EXP = [
-  {
-    id: "1",
-    date: "2025 - PRESENT",
-    position: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    project_name: "ABC",
-    description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet quo ducimus in velit veniam, laboriosam inventore amet aut nostrum?...",
-    language: {
-      language_name: ["Programming & Libraries:", "Data & Databases", "Machine Learning & AI"],
-    },
-  },
-  {
-    id: "2",
-    date: "2024-2025",
-    position: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
-    project_name: "ABC",
-    description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet quo ducimus in velit veniam, laboriosam inventore amet aut nostrum?...",
-    language: {
-      language_name: ["Programming & Libraries:", "Data & Databases", "Machine Learning & AI"],
-    },
-  },
-];
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+
+// Fetch data from Django API
+export const fetchExperience = createAsyncThunk(
+  "experience/fetchExperience",
+  async () => {
+    const response = await fetch("https://beby.pythonanywhere.com/api/experience/");
+    const data = await response.json();
+    return data;
+  }
+);
 
 const experienceSlice = createSlice({
   name: "experience",
-  initialState: DEFAULT_EXP,
-  reducers: {
-    addInitialItems: (store, action) => {
-      return store;
-    },
+  initialState: [], // start empty
+  reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(fetchExperience.fulfilled, (state, action) => {
+      return action.payload;
+    });
   },
 });
 
