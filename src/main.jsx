@@ -7,6 +7,7 @@ import myStore from "./store/index.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AllProject from "./components/AllProject.jsx";
 import Home from "./routes/Home.jsx";
+import NotFound from "./components/NotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/app", element: <App /> },
       { path: "/project-list", element: <AllProject /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);
@@ -25,5 +27,5 @@ createRoot(document.getElementById("root")).render(
     <Provider store={myStore}>
       <RouterProvider router={router} />
     </Provider>
-  </StrictMode>
+  </StrictMode>,
 );
