@@ -12,12 +12,11 @@ import NotFound from "./components/NotFound.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App />, // layout with BottomMenu + Outlet
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/app", element: <App /> },
-      { path: "/project-list", element: <AllProject /> },
-      { path: "*", element: <NotFound /> },
+      { index: true, element: <Home /> },          // default "/" route
+      { path: "project-list", element: <AllProject /> },
+      { path: "*", element: <NotFound /> },       // catch-all 404 page
     ],
   },
 ]);
