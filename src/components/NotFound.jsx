@@ -1,21 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.code}>404</h1>
-      <h2 style={styles.title}>Page Not Found</h2>
+    <>
+      {/* SEO tags for 404 page */}
+      <Helmet>
+        <title>404 Not Found | Ram Shrestha Portfolio</title>
+        <meta
+          name="description"
+          content="Page not found on Ram Shrestha Portfolio. Navigate back to Home."
+        />
+        <link rel="canonical" href="https://ramshrestha23.com.np/404" />
+      </Helmet>
 
-      <p style={styles.text}>
-        The page you are looking for doesn't exist or has been moved.
-      </p>
+      {/* 404 content */}
+      <div style={styles.container}>
+        <h1 style={styles.code}>404</h1>
+        <h2 style={styles.title}>Page Not Found</h2>
 
-      <Link to="/" style={styles.button}>
-        Go Back Home
-      </Link>
-    </div>
+        <p style={styles.text}>
+          The page you are looking for doesn't exist or has been moved.
+        </p>
+
+        <Link to="/" style={styles.button}>
+          Go Back Home
+        </Link>
+      </div>
+    </>
   );
 };
 
