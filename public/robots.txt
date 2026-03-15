@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /private/  
+
 Allow: /
 
 Sitemap: https://ramshrestha23.com.np/sitemap.xml
