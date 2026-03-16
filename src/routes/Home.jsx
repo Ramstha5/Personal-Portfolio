@@ -42,6 +42,8 @@ const Home = () => {
           <Footer />
         </main>
       </div>
+
+      {/* Loader / spinner */}
       <SpinnerImage />
     </>
   );
