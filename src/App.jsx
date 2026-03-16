@@ -23,7 +23,7 @@ import BottomMenu from "./components/BottomMenu";
 import "./App.css";
 
 const App = () => {
-  const defaultColor = "#1e293b";
+  const defaultColor = "#0a192f";
   const [clip, setClip] = useState("circle(0px at 50% 50%)");
   const timeoutRef = useRef(null);
 

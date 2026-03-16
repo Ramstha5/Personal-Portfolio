@@ -1,7 +1,9 @@
 .spinner_image img {
-  width: 140px;
+  /* width: 140px; */
   position: absolute;
   right: 35px;
+  height: 150px;
+  bottom: 0;
 }
 
 /* SpinnerImage.module.css */

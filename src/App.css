@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -6,22 +5,22 @@
 }
 :root {
   --primary-color: #95a3be;
-  --secondary-color:#CBD6EE;
-  --info-color:#5CE6D4;
-  --info-hover-color:#122B39;
-  --body-color:#475569;
-  --white-color: #fff; 
+  --secondary-color: #cbd6ee;
+  --info-color: #5ce6d4;
+  --info-hover-color: #117C8B33;
+  --body-color: #475569;
+  --white-color: #fff;
   --black-color: #000;
-  --bg-color: #0f172a;
+  --bg-color: #031a4f;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Inter", sans-serif;
   --line-height: 1.6;
   --body-font-size: 16px;
   --transition: all 0.4s ease-in-out;
-  --fs-display-1: clamp(1.5rem, 4vw, 3rem); 
+  --fs-display-1: clamp(1.5rem, 4vw, 3rem);
   --fs-display-2: 1.25rem; /*clamp(24px, 4vw, 40px);*/
   --fs-display-3: 1.001rem /* clamp(18px, 4vw, 28px);*/
-  --fs-display-4: clamp(20px, 4vw, 24px);
+    --fs-display-4: clamp(20px, 4vw, 24px);
   --fs-display-5: clamp(18px, 5vw, 22px);
   --fs-display-6: clamp(16px, 4vw, 18px);
 }
@@ -113,11 +112,9 @@ ol {
   margin-bottom: 0;
 }
 
-
-
 /* actual css start  */
 
-.content_wrapper{
+.content_wrapper {
   display: flex;
   justify-content: space-between;
   padding: 0 40px;
@@ -138,7 +135,7 @@ main {
 /* actual css end  */
 
 @media (max-width: 991px) {
-  .content_wrapper{
+  .content_wrapper {
     display: block;
     padding: 0;
   }
@@ -149,8 +146,7 @@ main {
   }
   main {
     padding: 0;
-    margin-left: 0; 
+    margin-left: 0;
     width: 100vw;
   }
-
 }
