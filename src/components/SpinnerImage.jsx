@@ -3,6 +3,7 @@ import React from "react";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import styles from "./SpinnerImage.module.css";
 import { Link } from "react-router-dom";
+import rotateGif from "../images/rotate.gif";
 
 const SpinnerImage = () => {
   const offcanvasImage = [
@@ -34,11 +35,7 @@ const SpinnerImage = () => {
           data-bs-target="#offcanvasBottom"
           aria-controls="offcanvasBottom"
         >
-          <img
-            src="/images/rotate.gif"
-            alt="Loading..."
-            className="w-16 h-16"
-          />
+         <img src={rotateGif} alt="Loading..." />
         </button>
       </div>
 
