@@ -5,6 +5,7 @@ import styles from "./SpinnerImage.module.css";
 import { Link } from "react-router-dom";
 import rotateGif from "../images/rotate.gif";
 
+
 const SpinnerImage = () => {
   const offcanvasImage = [
     {
