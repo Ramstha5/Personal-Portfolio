@@ -1,31 +1,15 @@
 // SpinnerImage.jsx
 import React from "react";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import styles from "./SpinnerImage.module.css";
 import { Link } from "react-router-dom";
-import rotateGif from "../images/rotate.gif";
-
 
 const SpinnerImage = () => {
   const offcanvasImage = [
-    {
-      id:1,
-      image: "images/project1.webp",
-    },
-    {
-      id:2,
-      image: "images/project1.webp",
-    },
-    {
-      id:3,
-      image: "images/project1.webp",
-    },
-    {
-      id:4,
-      image: "images/project1.webp",
-    },
+    { id: 1, image: "/images/project1.webp" },
+    { id: 2, image: "/images/project1.webp" },
+    { id: 3, image: "/images/project1.webp" },
+    { id: 4, image: "/images/project1.webp" },
   ];
-
 
   return (
     <>
@@ -36,7 +20,7 @@ const SpinnerImage = () => {
           data-bs-target="#offcanvasBottom"
           aria-controls="offcanvasBottom"
         >
-         <img src={rotateGif} alt="Loading..." />
+          <img src="/images/rotate.gif" alt="Loading..." />
         </button>
       </div>
 
@@ -73,11 +57,11 @@ const SpinnerImage = () => {
                           key={item.id}
                           className={`col-lg-6 col-md-6 col-sm-12 p-1 ${styles.img_wrapper}`}
                         >
-                            <Link to="/">
-                          <div className={`${styles.offcanvas_card} card `} >
-                              <img src={item.image} alt="Old site 1" />
-                          </div>
-                            </Link>
+                          <Link to="/">
+                            <div className={`${styles.offcanvas_card} card`}>
+                              <img src={item.image} alt={`Old site ${item.id}`} />
+                            </div>
+                          </Link>
                           <p className={styles.v}>v{item.id}</p>
                         </div>
                       ))}
