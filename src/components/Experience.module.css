@@ -8,12 +8,17 @@
   text-transform: uppercase;
   color: var(--white-color);
   line-height: 1.5;
-  font-size: 17xpx;
+  font-size: 18px;
   font-weight: 700;
   align-items: center;
   position: relative;
   letter-spacing: 2px;
-  display: none;
+
+}
+@media (min-width: 991px) {
+  .h2_heading {
+    display: none;
+  }
 }
 .date {
   text-transform: uppercase;
