@@ -7,9 +7,9 @@ const SpinnerImage = () => {
   // Add descriptive names for each project/image
   const offcanvasImage = [
     { id: 1, image: "/images/project1.webp", name: "Machine Learning Project" },
-    { id: 2, image: "/images/project2.webp", name: "Python Data Analysis Project" },
-    { id: 3, image: "/images/project3.webp", name: "AI Research Project" },
-    { id: 4, image: "/images/project4.webp", name: "Computer Vision Demo" },
+    { id: 2, image: "/images/project1.webp", name: "Python Data Analysis Project" },
+    { id: 3, image: "/images/project1.webp", name: "AI Research Project" },
+    { id: 4, image: "/images/project1.webp", name: "Computer Vision Demo" },
   ];
 
   return (
