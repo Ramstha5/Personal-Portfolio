@@ -10,7 +10,6 @@ import { HelmetProvider } from "react-helmet-async";
 import AllProject from "./components/AllProject.jsx";
 import Home from "./routes/Home.jsx";
 import NotFound from "./components/NotFound.jsx";
-import SpinnerImage from "./components/SpinnerImage.jsx";
 
 // Router setup with SEO-ready 404
 const router = createBrowserRouter([
@@ -20,8 +19,6 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "project-list", element: <AllProject /> },
-      { path: "spinner", element: <SpinnerImage /> },
-
     ],
   },
   {
