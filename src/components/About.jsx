@@ -35,7 +35,7 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="container">
-        <h2 className={styles.h2_heading}>About Me</h2>
+        <h2 className={styles.h2_heading}>About</h2>
         <div>
           <p className={styles.description}>
             I am <strong>Ram Shrestha</strong>, a <strong>Data Scientist based in Kathmandu, Nepal</strong>, 

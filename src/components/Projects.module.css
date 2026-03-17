@@ -152,6 +152,7 @@
   align-items: center;
   position: relative;
   letter-spacing: 2px;
+  display: none;
 }
 
 /* Hide heading on desktop */
