@@ -191,4 +191,8 @@
     margin-top: 140px;
     max-width: 17rem;
   }
+  .spinner_image img{
+    bottom: -9px;
+  right: -43px;
+  }
 }

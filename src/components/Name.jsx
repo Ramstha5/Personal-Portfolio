@@ -6,10 +6,16 @@ const Name = () => {
     <>
       <div className="container">
         <div className={styles.name_wrap}>
-          <h1 className={styles.name}>Ram Shrestha - Data Scientist in Nepal</h1>
-          <h2>Data Scientist</h2>
-            <p className="short_des" style={{color:'#95a3be'}}>Hello! I am Ram Shrestha, a passionate Data Scientist from Nepal. I specialize in Machine Learning, Python, and Data Analytics. I create projects that solve real-world problems with data.</p>
-            
+          <h1 className={styles.name}>
+            Ram Shrestha - Data Scientist in Nepal
+          </h1>
+          <h2>AI Engineer Kathmandu</h2>
+          <p className="short_des" style={{ color: "#95a3be" }}>
+            Hello! I am Ram Shrestha, a Data Scientist and AI Engineer in
+            Kathmandu, Nepal. I specialize in Python, Machine Learning, AI, and
+            Data Analytics, creating projects that solve real-world problems
+            with data.
+          </p>
         </div>
       </div>
     </>
