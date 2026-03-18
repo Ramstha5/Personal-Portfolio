@@ -77,9 +77,21 @@
       media="print"
       onload="this.media = 'all'"
     />
-    <!-- css -->
-    <link rel="preload" href="/assets/index-C2MRD9OC.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/index-C2MRD9OC.css"></noscript>
+
+    <style>
+    /* Example: Inline styles for header, hero section, main layout */
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #0f172a; color: #fff; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+    main, #root { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+    a { text-decoration: none; color: inherit; }
+    /* Add other critical styles here for above-the-fold content */
+  </style>
+
+<!-- css -->
+ <link rel="preload" href="/assets/index-C2MRD9OC.css" as="style" onload="this.rel='stylesheet'">
+<noscript>
+  <link rel="stylesheet" href="/assets/index-C2MRD9OC.css">
+</noscript>
     <!-- 🔥 STRUCTURED DATA (VERY IMPORTANT) -->
     <script type="application/ld+json">
       {
