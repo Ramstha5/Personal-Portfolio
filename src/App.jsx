@@ -72,7 +72,7 @@ const App = () => {
   style={{
     position: "fixed",
     inset: 0,
-    backgroundImage: "url('/images/profile.webp')",
+    backgroundImage: "url('/images/data-science-portfolio-nepal.webp')",
     backgroundSize: "cover",
     backgroundPosition: "top",
     clipPath: clip,
