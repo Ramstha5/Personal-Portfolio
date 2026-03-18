@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
   <url>
-    <loc>https://ramshrestha23.com.np/</loc>
-    <lastmod>2026-03-15</lastmod>
-    <priority>1.0</priority>
+    <loc>https://www.ramshrestha23.com.np/</loc>
+    <image:image>
+      <image:loc>https://www.ramshrestha23.com.np/images/data-science-portfolio-nepal.webp</image:loc>
+      <image:caption>Ram Shrestha Data Scientist Portfolio Kathmandu Nepal</image:caption>
+    </image:image>
   </url>
+
+  <!-- Portfolio Page -->
   <url>
-    <loc>https://ramshrestha23.com.np/project-list</loc>
-    <lastmod>2026-03-15</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.ramshrestha23.com.np/portfolio</loc>
+    <image:image>
+      <image:loc>https://www.ramshrestha23.com.np/images/data-science-portfolio-nepal.webp</image:loc>
+      <image:caption>Data Science Project by Ram Shrestha in Kathmandu</image:caption>
+    </image:image>
+    <!-- Add more images here if you have multiple -->
   </url>
+
+  <!-- Blog or Other Pages -->
+  <url>
+    <loc>https://www.ramshrestha23.com.np/blog</loc>
+    <image:image>
+      <image:loc>https://www.ramshrestha23.com.np/images/blog-image.webp</image:loc>
+      <image:caption>Ram Shrestha Blog Image Example</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
