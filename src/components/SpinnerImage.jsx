@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const SpinnerImage = () => {
   // Add descriptive names for each project/image
   const offcanvasImage = [
-    { id: 1, image: "/images/project1.webp", name: "Machine Learning Project" },
-    { id: 2, image: "/images/project1.webp", name: "Python Data Analysis Project" },
-    { id: 3, image: "/images/project1.webp", name: "AI Research Project" },
-    { id: 4, image: "/images/project1.webp", name: "Computer Vision Demo" },
+    { id: 1, image: "/images/data-science-portfolio-nepal-project.webp", name: "Machine Learning Project" },
+    { id: 2, image: "/images/data-science-portfolio-nepal-project.webp", name: "Python Data Analysis Project" },
+    { id: 3, image: "/images/data-science-portfolio-nepal-project.webp", name: "AI Research Project" },
+    { id: 4, image: "/images/data-science-portfolio-nepal-project.webp", name: "Computer Vision Demo" },
   ];
 
   return (
@@ -23,7 +23,7 @@ const SpinnerImage = () => {
           aria-controls="offcanvasBottom"
           aria-label="Open old projects gallery"
         >
-          <img src="/images/rotate.gif" alt="Loading Ram Shrestha Portfolio" />
+          <img src="/images/data-science-portfolio-nepal-spinner.gif" alt="Loading Ram Shrestha Portfolio" />
         </button>
       </div>
 
