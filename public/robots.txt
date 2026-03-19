@@ -1,6 +1,16 @@
+# robots.txt for https://www.ramshrestha23.com.np/
+
+# Allow all crawlers
 User-agent: *
-Disallow: /private/  
+Disallow:
 
-Allow: /
+# Specify your sitemap location
+Sitemap: https://www.ramshrestha23.com.np/sitemap.xml
 
-Sitemap: https://ramshrestha23.com.np/sitemap.xml
+# Optional: Block sensitive paths (uncomment if needed)
+# Disallow: /admin/
+# Disallow: /login/
+# Disallow: /private/
+
+# Optional: Crawl delay for heavy sites (default not needed)
+# Crawl-delay: 1
