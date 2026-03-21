@@ -44,25 +44,40 @@
 
     <!-- ✅ Structured Data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Ram Shrestha",
-        "jobTitle": "Data Scientist",
-        "url": "https://www.ramshrestha23.com.np/",
-        "image": "https://www.ramshrestha23.com.np/images/data-science-portfolio-nepal.webp",
-        "sameAs": [
-          "https://www.linkedin.com/in/ram-shrestha-data-scientist/",
-          "https://github.com/Ramstha5"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Kathmandu",
-          "addressCountry": "Nepal"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Ram Shrestha",
+          "jobTitle": "Data Scientist",
+          "url": "https://ramshrestha23.com.np/",
+          "image": "https://ramshrestha23.com.np/images/ram-shrestha-data-scientist.webp",
+          "sameAs": [
+            "https://www.linkedin.com/in/ram-shrestha-data-scientist/",
+            "https://github.com/Ramstha5"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kathmandu",
+            "addressCountry": "Nepal"
+          },
+          "description": "Data Scientist and AI Engineer in Nepal, specializing in Machine Learning and Python."
         },
-        "description": "Data Scientist and AI Engineer in Nepal specializing in Machine Learning and Python."
-      }
-    </script>
+        {
+          "@type": "WebSite",
+          "name": "Ram Shrestha Portfolio",
+          "url": "https://ramshrestha23.com.np/",
+          "publisher": {
+            "@type": "Person",
+            "name": "Ram Shrestha"
+          },
+          "description": "Portfolio website of Ram Shrestha. Explore projects, skills, and experience in Machine Learning, AI, and Data Analytics.",
+          "inLanguage": "en"
+        }
+      ]
+    }
+  </script>
   </head>
 
   <body>
