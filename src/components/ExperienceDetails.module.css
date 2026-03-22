@@ -1,0 +1,95 @@
+.experienceDetailsSection {
+  padding: 4rem 0;
+}
+
+.backButton {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  color: var(--info-color);
+  background: var(--info-hover-color);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+.arrow {
+  margin-right: 10px;
+  transition: var(--transition);
+}
+
+.backButton:hover .arrow {
+  transform: translate(-10px, 0px);
+}
+.experienceCard {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--box-color);
+  transform: translateY(-4px);
+  box-shadow: var(--box-shadow-color);
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.date {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.position {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+
+}
+
+.projectName {
+  font-size: 1.2rem;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  transition: var(--transition);
+
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.techHeading {
+  margin-bottom: 0.8rem;
+  color: var(--white-color);
+  transition: var(--transition);
+
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.techItem {
+  color: var(--info-color);
+  background: var(--info-hover-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.techItem:hover{
+     color: var(--white-color);
+}
+
+.experienceCard:hover .position,
+.experienceCard:hover .projectName,
+.experienceCard:hover .techHeading {
+  color: var(--info-color);
+}
+

@@ -87,14 +87,14 @@
 
 // export default ExperienceItem;
 
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import styles from "./Experience.module.css";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ExperienceItem = ({ ExpItem }) => {
   const [showMore, setShowMore] = useState(false);
-  const MAX_LENGTH = 300; // characters to show initially
+  const MAX_LENGTH = 300;
 
   const toggleShowMore = () => setShowMore(!showMore);
 
@@ -106,25 +106,35 @@ const ExperienceItem = ({ ExpItem }) => {
   return (
     <div className={`${styles.experience_card} mt-3`}>
       <div className="row">
+        {/* Date */}
         <div className="col-md-3 p-0">
           <span className={styles.date}>{ExpItem.date}</span>
         </div>
 
+        {/* Content */}
         <div className="col-md-9 p-0">
           <h3>
-            <span className={styles.working_position}>
+            {/* CLICKABLE TITLE → DETAILS PAGE */}
+            <Link
+              to={`/experience/${ExpItem.id}`}
+              className={styles.working_position}
+            >
               {ExpItem.position}
-            </span>
+            </Link>
+
             <span className={styles.project_name}>
               {ExpItem.project_name}
             </span>
-            <span className={styles.arrow}>
-              <FaArrowRight />
-            </span>
+
+            <Link to={`/experience/${ExpItem.id}`}>
+              <FaArrowRight className={styles.arrow} />
+            </Link>
           </h3>
 
+          {/* Description */}
           <p className={styles.project_description}>
             {showMore ? ExpItem.description : shortDescription}
+
             {ExpItem.description.length > MAX_LENGTH && (
               <span
                 onClick={toggleShowMore}
@@ -135,11 +145,12 @@ const ExperienceItem = ({ ExpItem }) => {
                   fontWeight: "bold",
                 }}
               >
-                {showMore ? "Show Less" : "Show More"}
+                {showMore ? " Show Less" : " Show More"}
               </span>
             )}
           </p>
 
+          {/* Technologies */}
           <ul className={styles.language}>
             {ExpItem.language_name?.map((language) => (
               <li key={language} className={styles.language_name}>

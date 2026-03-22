@@ -11,6 +11,8 @@
   --body-color: #475569;
   --white-color: #fff;
   --black-color: #000;
+  --box-color: rgba(155, 159, 172, 0.1);
+  --box-shadow-color: 0 10px 25px rgba(0,0,0,0.25);;
   --bg-color: #081428;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Inter", sans-serif;

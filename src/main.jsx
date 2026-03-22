@@ -11,6 +11,8 @@ import AllProject from "./components/AllProject.jsx";
 import Home from "./routes/Home.jsx";
 import NotFound from "./components/NotFound.jsx";
 import SpinnerImage from "./components/SpinnerImage.jsx";
+import ProjectDetails from "./components/ProjectDetails.jsx";
+import ExperienceDetails from "./components/ExperienceDetails.jsx";
 
 // Router setup with SEO-ready 404
 const router = createBrowserRouter([
@@ -21,6 +23,8 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "project-list", element: <AllProject /> },
       { path: "spinner", element: <SpinnerImage /> },
+      { path: "/project/:id", element: <ProjectDetails /> },
+      { path: "/experience/:id", element: <ExperienceDetails /> },
 
     ],
   },

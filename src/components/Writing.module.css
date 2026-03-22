@@ -1,65 +1,66 @@
-.writings{
-   padding: 40px 0;
+.writings {
+  padding: 40px 0;
 }
-.writing_image{
-   width: 120px;
-   height: 70px;
+.writing_image {
+  width: 120px;
+  height: 70px;
 }
-.writing_image img{
-   object-fit: cover;
-   height: 100%;
-   width: 100%;
+.writing_image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
-.title{
-   color: var(--white-color);
-   line-height: 1.5;
-   letter-spacing: 0.6px;
-   font-weight: 700;
+.title {
+  color: var(--white-color);
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+  font-weight: 700;
 }
 .arrow {
-   color: var(--white-color);
-   padding-left: 5px;
-   font-size: 14px;
- }
+  color: var(--white-color);
+  padding-left: 5px;
+  font-size: 14px;
+}
 
- .arrow svg {
-   color: var(--white-color);
-   padding-left: 5px;
-   font-size: var(--body-font-size);
-   rotate: -30deg;
-   transition: var(--transition);
- }
-.date{
-   color: var(--primary-color);
-   margin-bottom: 0;
-   font-weight: 500;
+.arrow svg {
+  color: var(--white-color);
+  padding-left: 5px;
+  font-size: var(--body-font-size);
+  rotate: -30deg;
+  transition: var(--transition);
+}
+.date {
+  color: var(--primary-color);
+  margin-bottom: 0;
+  font-weight: 500;
 }
 .writing_card {
-   transition: var(--transition);
-   padding: 15px ;
-   border-radius: 9px;
- }
- .writing_card:hover {
-   background-color: rgba(155, 159, 172, 0.1);
-   cursor: pointer;
- }
- 
- .writing_card:hover .title {
-   color: var(--info-color);
- }
- 
- .writing_card:hover .arrow svg {
-   transform: translate(8px, -1px);
- }
- 
- .writing_card:hover .project_name {
-   color: var(--info-color);
- }
- .writing_card:hover .arrow svg {
-   color: var(--info-color);
- }
+  transition: var(--transition);
+  padding: 15px;
+  border-radius: 9px;
+}
+.writing_card:hover {
+  background-color: var(--box-color);
+  cursor: pointer;
+  transform: translateY(-4px);
+}
 
- .h2_heading {
+.writing_card:hover .title {
+  color: var(--info-color);
+}
+
+.writing_card:hover .arrow svg {
+  transform: translate(8px, -1px);
+}
+
+.writing_card:hover .project_name {
+  color: var(--info-color);
+}
+.writing_card:hover .arrow svg {
+  color: var(--info-color);
+}
+
+.h2_heading {
   text-transform: uppercase;
   color: var(--white-color);
   line-height: 1.5;
@@ -76,18 +77,17 @@
   }
 }
 @media (max-width: 575px) {
-  .writing_card{
+  .writing_card {
     padding: 0;
   }
-  .writing_image{
+  .writing_image {
     width: 70px;
     height: 40px;
- }
- .date{
-  font-size: 13px;
-}
- .title{
- font-size: 13px;
-}
-  
+  }
+  .date {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 13px;
+  }
 }

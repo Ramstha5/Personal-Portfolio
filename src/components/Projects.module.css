@@ -36,28 +36,32 @@
 
 .arrow {
   color: var(--white-color);
-  padding-left: 5px;
+  margin-left: 5px;
   font-size: 14px;
 }
 
-.arrow svg {
+.arrow {
   color: var(--white-color);
-  padding-left: 5px;
+  margin-left: 5px;
   font-size: var(--body-font-size);
   transition: var(--transition);
 }
-
 /* Description */
-
 .description {
   font-size: 13px;
   color: var(--primary-color);
   font-family: var(--primary-font);
   letter-spacing: 0.9px;
+
+  /* 3-line truncation */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;       /* limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Language Tags */
-
 .language {
   display: flex;
   flex-wrap: wrap;
@@ -89,23 +93,21 @@
 /* Hover Effects */
 
 .projects_card:hover {
-  background-color: rgba(155, 159, 172, 0.1);
+  background-color: var(--box-color);
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: var(--box-shadow-color);
   cursor: pointer;
 }
 
-.projects_card:hover .title {
-  color: var(--info-color);
-}
-
-.projects_card:hover .arrow svg {
-  transform: translate(8px, -1px);
-  color: var(--info-color);
-}
-
+.projects_card:hover .title,
 .projects_card:hover .project_name {
   color: var(--info-color);
+}
+
+.projects_card:hover svg {
+  transform: translate(8px, -1px);
+  color: var(--info-color);
+  transition: var(--transition);
 }
 
 /* Project Name */
@@ -119,25 +121,26 @@
   position: relative;
   transition: var(--transition);
 }
-
-.project:hover:after {
+.project::after {
   content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
-  width: 100%;
-  height: 1px;
+  width: 0%; /* start from 0 */
+  height: 2px;
   background-color: var(--info-color);
+  transition: width 0.3s ease;
+}
+.project:hover::after {
+  width: 100%;
 }
 
 /* Project Link */
-
-.project_link {
+.project_link svg {
   transition: var(--transition);
 }
-
 .project_link:hover svg {
-  transform: translate(8px, -1px);
+  transform: translate(10px, -1px);
   color: var(--info-color);
 }
 
