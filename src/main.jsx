@@ -1,37 +1,36 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.jsx";
 import { Provider } from "react-redux";
-import myStore from "./store/index.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
-import AllProject from "./components/AllProject.jsx";
+import myStore from "./store/index.js";
+
+// Components
+import App from "./App.jsx";
 import Home from "./routes/Home.jsx";
-import NotFound from "./components/NotFound.jsx";
-import SpinnerImage from "./components/SpinnerImage.jsx";
+import AllProject from "./components/AllProject.jsx";
 import ProjectDetails from "./components/ProjectDetails.jsx";
 import ExperienceDetails from "./components/ExperienceDetails.jsx";
+import SpinnerImage from "./components/SpinnerImage.jsx";
+import NotFound from "./components/NotFound.jsx";
+import WritingDetails from "./components/WritingDetails.jsx";
 
-// Router setup with SEO-ready 404
+// Router
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />, // layout with BottomMenu + Outlet
+    path: "/", // main layout
+    element: <App />,
     children: [
       { index: true, element: <Home /> },
       { path: "project-list", element: <AllProject /> },
       { path: "spinner", element: <SpinnerImage /> },
-      { path: "/project/:id", element: <ProjectDetails /> },
-      { path: "/experience/:id", element: <ExperienceDetails /> },
-
+      { path: "project/:id", element: <ProjectDetails /> },
+      { path: "experience/:id", element: <ExperienceDetails /> },
+      { path: "/writing/:id", element: <WritingDetails /> },
     ],
   },
-  {
-    path: "*", // root-level catch-all for unknown URLs
-    element: <NotFound />,
-  },
+  { path: "*", element: <NotFound /> }, // catch-all
 ]);
 
 createRoot(document.getElementById("root")).render(

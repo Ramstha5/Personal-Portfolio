@@ -1,0 +1,211 @@
+/* ================= SECTION ================= */
+.writingDetailsSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  min-height: 100vh;
+}
+
+/* ================= BACK BUTTON ================= */
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  color: var(--info-color);
+  background: var(--info-hover-color);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.backButton .arrow {
+  margin-right: 8px;
+  transition: var(--transition);
+}
+
+.backButton:hover .arrow {
+  transform: translateX(-6px);
+}
+
+/* ================= WRITING CARD ================= */
+.writingCard {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.writingCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-color);
+}
+
+/* ================= IMAGE ================= */
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.writingImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.writingCard:hover .writingImage {
+  transform: scale(1.05);
+}
+
+/* ================= CONTENT ================= */
+.writingTitle {
+  font-size: var(--fs-display-4);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: #94a3b8;
+  font-size: var(--fs-display-5);
+  margin-bottom: 1.2rem;
+}
+
+.writingDescription {
+  color: #cbd5e1;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* ================= TAGS ================= */
+.tagWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: #0284c7;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: clamp(0.75rem, 1.5vw, 0.9rem);
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.tag:hover {
+  background: #0ea5e9;
+}
+
+/* ================= READ MORE BUTTON ================= */
+.readMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: #2563eb;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
+  transition: all 0.3s ease;
+}
+
+.readMoreBtn:hover {
+  background: #1d4ed8;
+}
+
+.readMoreBtn .arrowRight {
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.readMoreBtn:hover .arrowRight {
+  transform: translateX(6px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .writingCard {
+    padding: 1.5rem;
+  }
+
+  .imageWrapper {
+    margin-bottom: 1rem;
+  }
+
+  .writingTitle {
+    font-size: 1.8rem;
+  }
+
+  .writingDescription {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .writingDetailsSection {
+    padding: 1rem 0.5rem;
+  }
+
+  .writingCard {
+    padding: 0.8rem;
+  }
+
+  .imageWrapper {
+    margin-bottom: 0.8rem;
+  }
+
+  .writingImage {
+    width: 100%;
+    height: clamp(180px, 30vw, 250px); /* full-width responsive height */
+    border-radius: 8px;
+  }
+
+  .writingTitle {
+    font-size: 1.5rem;
+  }
+
+  .writingDescription {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .tagWrapper {
+    justify-content: flex-start;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .writingDetailsSection {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .writingImage {
+    height: 160px;
+  }
+
+  .writingTitle {
+    font-size: 1.3rem;
+  }
+
+  .writingDescription {
+    font-size: 0.9rem;
+  }
+
+  .tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+  }
+}

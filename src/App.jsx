@@ -1,21 +1,3 @@
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import React from "react";
-// import { Outlet } from "react-router-dom";
-// import BottomMenu from "./components/BottomMenu";
-// import "./App.css";
-
-// const App = () => {
-//   return (
-//     <>
-//       <BottomMenu />
-//       <Outlet />
-//     </>
-//   );
-// };
-
-// export default App;
-
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useRef } from "react";
 import { Outlet } from "react-router-dom";
@@ -27,31 +9,31 @@ const App = () => {
   const [clip, setClip] = useState("circle(0px at 50% 50%)");
   const timeoutRef = useRef(null);
 
+  // Start hold animation
   const startHold = (x, y) => {
-    // delay before showing circle (press a bit long)
     timeoutRef.current = setTimeout(() => {
-      // large enough circle to cover full screen
-      const diagonal = Math.sqrt(window.innerWidth**2 + window.innerHeight**2);
+      const diagonal = Math.sqrt(window.innerWidth ** 2 + window.innerHeight ** 2);
       setClip(`circle(${diagonal}px at ${x}px ${y}px)`);
-    }, 600); // 400ms hold delay
+    }, 600); // 600ms hold delay
   };
 
+  // End hold animation
   const endHold = () => {
     clearTimeout(timeoutRef.current);
     setClip("circle(0px at 50% 50%)");
   };
 
-  // Desktop
+  // Desktop handlers
   const handleMouseDown = (e) => startHold(e.clientX, e.clientY);
-  const handleMouseUp = () => endHold();
-  const handleMouseLeave = () => endHold();
+  const handleMouseUp = endHold;
+  const handleMouseLeave = endHold;
 
-  // Mobile
+  // Mobile handlers
   const handleTouchStart = (e) => {
     const touch = e.touches[0];
     startHold(touch.clientX, touch.clientY);
   };
-  const handleTouchEnd = () => endHold();
+  const handleTouchEnd = endHold;
 
   return (
     <div
@@ -67,27 +49,28 @@ const App = () => {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Circle Image Overlay */}
-     <div
-  style={{
-    position: "fixed",
-    inset: 0,
-    backgroundImage: "url('/images/data-science-portfolio-nepal.webp')",
-    backgroundSize: "cover",
-    backgroundPosition: "top",
-    clipPath: clip,
-    transition: "clip-path 0.6s ease",
-    pointerEvents: "none",
-    zIndex: 9999,
-  }}
->
-  <img 
-    src="/images/profile.webp" 
-    fetchpriority="high" 
-    style={{ display: 'none' }} 
-    alt="Ram Shrestha Data Scientist Nepal" 
-  />
-</div>
+      {/* Circle Reveal Overlay */}
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          backgroundImage: "url('/images/data-science-portfolio-nepal.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          clipPath: clip,
+          transition: "clip-path 0.6s ease",
+          pointerEvents: "none",
+          zIndex: 9999,
+        }}
+      >
+        {/* Preload hidden image for faster rendering */}
+        <img
+          src="/images/profile.webp"
+          alt="Ram Shrestha Data Scientist Nepal"
+          fetchpriority="high"
+          style={{ display: "none" }}
+        />
+      </div>
 
       <BottomMenu />
       <Outlet />

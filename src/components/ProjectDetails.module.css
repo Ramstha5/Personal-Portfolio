@@ -1,11 +1,9 @@
-/* Section */
+/* ================= SECTION ================= */
 .projectDetailsSection {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 
-
-/* Back Button */
-
+/* ================= BACK BUTTON ================= */
 .backButton {
   display: inline-block;
   margin-bottom: 2rem;
@@ -14,9 +12,10 @@
   background: var(--info-hover-color);
   border-radius: 6px;
   text-decoration: none;
-  transition: 0.3s;
   font-weight: 500;
+  transition: var(--transition);
 }
+
 .arrow {
   margin-right: 10px;
   transition: var(--transition);
@@ -26,32 +25,34 @@
   transform: translate(-10px, 0px);
 }
 
-/* Project Card */
+/* ================= CARD ================= */
 .projectCard {
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   background-color: var(--box-color);
-  transform: translateY(-4px);
   box-shadow: var(--box-shadow-color);
-  cursor: pointer;
   border-radius: 9px;
+  transition: all 0.3s ease;
 }
 
-/* Image */
+/* ================= IMAGE ================= */
 .projectImage {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+  border-radius: 8px;
+  display: block;
   transition: var(--transition);
 }
 
-/* Content */
+/* ================= CONTENT ================= */
 .projectContent {
   padding: 0 2rem;
 }
 
-/* Title */
+/* ================= TITLE ================= */
 .projectTitle {
   font-size: 2rem;
   font-weight: 700;
@@ -60,7 +61,7 @@
   transition: var(--transition);
 }
 
-/* Description */
+/* ================= DESCRIPTION ================= */
 .projectDescription {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -68,7 +69,7 @@
   margin-bottom: 1.5rem;
 }
 
-/* Technologies */
+/* ================= TECH ================= */
 .techHeading {
   margin-bottom: 0.8rem;
   color: var(--white-color);
@@ -91,14 +92,109 @@
   font-weight: 500;
   transition: var(--transition);
 }
-.techItem:hover{
+
+.techItem:hover {
   color: var(--white-color);
 }
 
+/* ================= HOVER (DESKTOP ONLY) ================= */
+@media (hover: hover) {
+  .projectCard:hover .projectTitle,
+  .projectCard:hover .techHeading {
+    color: var(--info-color);
+  }
 
-.projectCard:hover .projectTitle,
-.projectCard:hover .techHeading{
-  color: var(--info-color);
+  .projectCard:hover .projectImage {
+    transform: scale(1.05);
+  }
 }
-.projectCard:hover .projectImage{
-  transform: scale(1.04); /* image zoom 5% */}
+
+/* ================= TABLET ================= */
+@media (max-width: 992px) {
+  .projectDetailsSection {
+    padding: 2rem 1rem;
+  }
+
+  .projectCard {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: 300px;
+  }
+
+  .projectContent {
+    padding: 1rem 0;
+  }
+
+  .projectTitle {
+    font-size: 1.7rem;
+  }
+
+  .projectDescription {
+    font-size: 1rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .projectDetailsSection {
+    padding: 1rem 0; /* FULL WIDTH FIX */
+  }
+
+  .projectCard {
+    flex-direction: column;
+    padding: 0;
+    border-radius: 0; /* edge-to-edge look */
+  }
+
+  .projectImage {
+    width: 100%;
+    height: clamp(220px, 45vw, 320px); /* PERFECT HEIGHT */
+    border-radius: 0;
+  }
+
+  .projectContent {
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .projectTitle {
+    font-size: 1.5rem;
+  }
+
+  .projectDescription {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .techList {
+    justify-content: flex-start;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .projectDetailsSection {
+    padding: 0.8rem 0;
+  }
+
+  .projectImage {
+    height: 200px;
+  }
+
+  .projectTitle {
+    font-size: 1.3rem;
+  }
+
+  .projectDescription {
+    font-size: 0.9rem;
+  }
+
+  .techItem {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+  }
+}

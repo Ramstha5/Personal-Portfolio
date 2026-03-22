@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- ✅ SINGLE MAIN TITLE -->
+    <!-- ✅ Main Title -->
     <title>Ram Shrestha - Data Scientist Nepal | AI Engineer Kathmandu</title>
 
     <!-- ✅ SEO -->
@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://ramshrestha23.com.np/" />
     <meta name="robots" content="index, follow" />
 
-    <!-- ✅ Icons -->
+    <!-- ✅ Favicon & Apple Touch Icon -->
     <link rel="icon" href="/images/data-science-portfolio-nepal-favicon.png" />
     <link rel="apple-touch-icon" href="/images/data-science-portfolio-nepal-favicon.png" />
 
@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://ramshrestha23.com.np/" />
     <meta property="og:type" content="website" />
 
-    <!-- ✅ Twitter -->
+    <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Ram Shrestha - Data Science Portfolio Nepal" />
     <meta name="twitter:description" content="Portfolio of Ram Shrestha, Data Scientist & AI Engineer in Nepal." />
@@ -32,14 +32,14 @@
     <!-- ✅ Theme -->
     <meta name="theme-color" content="#0f172a" />
 
-    <!-- ✅ Performance -->
+    <!-- ✅ Preconnect for Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Fonts -->
+    <!-- ✅ Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" />
 
-    <!-- CSS -->
+    <!-- ✅ Your CSS -->
     <link rel="stylesheet" href="/assets/index-C2MRD9OC.css" />
 
     <!-- ✅ Structured Data -->
@@ -68,22 +68,28 @@
           "@type": "WebSite",
           "name": "Ram Shrestha Portfolio",
           "url": "https://ramshrestha23.com.np/",
-          "publisher": {
-            "@type": "Person",
-            "name": "Ram Shrestha"
-          },
+          "publisher": { "@type": "Person", "name": "Ram Shrestha" },
           "description": "Portfolio website of Ram Shrestha. Explore projects, skills, and experience in Machine Learning, AI, and Data Analytics.",
           "inLanguage": "en"
         }
       ]
     }
-  </script>
+    </script>
   </head>
 
   <body>
+    <!-- ✅ React Root -->
     <div id="root"></div>
 
-    <!-- ✅ Remove defer (module already async) -->
+    <!-- ✅ React + Vite Script -->
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- ✅ React Router Fix for Refresh -->
+    <script>
+      // Fix blank page on refresh with React Router (optional for Vite)
+      if (!window.location.pathname.startsWith("/")) {
+        window.history.replaceState(null, "", "/");
+      }
+    </script>
   </body>
 </html>
