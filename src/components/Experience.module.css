@@ -74,7 +74,7 @@
 
 .experience_card {
   transition: var(--transition);
-  padding: 25px;
+  padding: 0 15px;
   border-radius: 9px;
 }
 .experience_card:hover {
