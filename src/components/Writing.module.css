@@ -2,7 +2,7 @@
   padding: 40px 0;
 }
 .writing_image {
-  width: 120px;
+  width: auto;
   height: 70px;
 }
 .writing_image img {
@@ -81,13 +81,15 @@
     padding: 0;
   }
   .writing_image {
-    width: 70px;
-    height: 40px;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
   }
   .date {
-    font-size: 13px;
+    font-size: 12px;
   }
   .title {
-    font-size: 13px;
+    font-size: 12px;
   }
 }

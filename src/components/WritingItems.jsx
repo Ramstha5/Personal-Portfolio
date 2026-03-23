@@ -14,7 +14,7 @@ const WritingItems = ({ WrtItem }) => {
   return (
     <div className={`${styles.writing_card} mt-3`}>
       <div className="row">
-        <div className="col-3">
+        <div className="col-3 p-0">
           <div className={styles.writing_image}>
             <img src={imageUrl} alt={WrtItem.title} />
           </div>

@@ -4,30 +4,84 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.ramshrestha23.com.np/</loc>
+    <loc>https://ramshrestha23.com.np/</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.ramshrestha23.com.np/images/data-science-portfolio-nepal.webp</image:loc>
+      <image:loc>https://ramshrestha23.com.np/images/data-science-portfolio-nepal.webp</image:loc>
       <image:caption>Ram Shrestha Data Scientist Portfolio Kathmandu Nepal</image:caption>
     </image:image>
   </url>
 
-  <!-- Portfolio Page -->
+  <!-- About Page -->
   <url>
-    <loc>https://www.ramshrestha23.com.np/portfolio</loc>
-    <image:image>
-      <image:loc>https://www.ramshrestha23.com.np/images/data-science-portfolio-nepal.webp</image:loc>
-      <image:caption>Data Science Project by Ram Shrestha in Kathmandu</image:caption>
-    </image:image>
-    <!-- Add more images here if you have multiple -->
+    <loc>https://ramshrestha23.com.np/about</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- Blog or Other Pages -->
+  <!-- Portfolio Page -->
   <url>
-    <loc>https://www.ramshrestha23.com.np/blog</loc>
+    <loc>https://ramshrestha23.com.np/portfolio</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
     <image:image>
-      <image:loc>https://www.ramshrestha23.com.np/images/blog-image.webp</image:loc>
-      <image:caption>Ram Shrestha Blog Image Example</image:caption>
+      <image:loc>https://ramshrestha23.com.np/images/data-science-portfolio-nepal.webp</image:loc>
+      <image:caption>Data Science Projects by Ram Shrestha in Nepal</image:caption>
     </image:image>
+  </url>
+
+  <!-- Example Project Pages -->
+  <url>
+    <loc>https://ramshrestha23.com.np/portfolio/project1</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ramshrestha23.com.np/portfolio/project2</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Main Page -->
+  <url>
+    <loc>https://ramshrestha23.com.np/blog</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ramshrestha23.com.np/images/blog-image.webp</image:loc>
+      <image:caption>Ram Shrestha Data Science Blog Nepal</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Example Blog Posts -->
+  <url>
+    <loc>https://ramshrestha23.com.np/blog/data-science-projects-nepal</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ramshrestha23.com.np/blog/machine-learning-python-tutorial</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://ramshrestha23.com.np/contact</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
 </urlset>

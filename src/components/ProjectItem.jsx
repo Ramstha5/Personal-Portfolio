@@ -65,7 +65,7 @@ const ProjectItem = ({ ProItem }) => {
     <div className={`${styles.projects_card} mt-3`}>
       <div className="row d-flex flex-wrap">
         {/* Project Image */}
-        <div className={`col-md-4 ${styles.project_img}`}>
+        <div className={`col-md-4 pe-0${styles.project_img}`}>
           <div className={styles.project_image}>
             <Link to={`/project/${ProItem.id}`} className={styles.title}>
               <img src={ProItem?.project_image} alt={ProItem?.title} />
