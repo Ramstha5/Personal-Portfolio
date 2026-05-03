@@ -17,31 +17,48 @@ const Projects = () => {
 
   return (
     <>
-      <section className={styles.projects} id="project">
+      <section className={styles.projects} id="projects" style={{ padding: "8rem 0" }}>
         <div className="container">
-          <h2 className={styles.h2_heading}>project</h2>
+          <h2 style={{ 
+            fontSize: "clamp(2rem, 6vw, 3.5rem)", 
+            textAlign: "center", 
+            marginBottom: "4rem",
+            textTransform: "uppercase"
+          }}>Featured Projects</h2>
 
-          {ProItems.length === 0 ? (
-            <p>Loading projects...</p> // Show loading message
-          ) : (
-            ProItems.slice(0, 5).map((ProItem) => (
-              <ProjectItem key={ProItem.id} ProItem={ProItem} />
-            ))
-          )}
+          <div className="grid">
+            {ProItems.length === 0 ? (
+              <p>Loading projects...</p>
+            ) : (
+              ProItems.slice(0, 5).map((ProItem) => (
+                <div key={ProItem.id} className="card">
+                  <ProjectItem ProItem={ProItem} />
+                </div>
+              ))
+            )}
+          </div>
 
-          <div className="row mt-5">
-            <div className="col-md-12">
-              <a
-                href="/project-list"
-                className={styles.project_link}
-                rel="noopener noreferrer"
-              >
-                <span className={styles.project}>View Full Project Archive</span>
-                <span className={styles.arrow}>
-                  <FaArrowRight />
-                </span>
-              </a>
-            </div>
+          <div style={{ 
+            textAlign: "center", 
+            marginTop: "4rem" 
+          }}>
+            <a
+              href="/project-list"
+              style={{
+                display: "inline-flex", 
+                alignItems: "center", 
+                gap: "0.5rem",
+                background: "var(--accent-gradient)",
+                padding: "1rem 2rem",
+                borderRadius: "var(--radius)",
+                color: "var(--text-primary)",
+                fontWeight: 600,
+                textDecoration: "none"
+              }}
+              rel="noopener noreferrer"
+            >
+              View All Projects
+            </a>
           </div>
         </div>
       </section>

@@ -16,32 +16,52 @@ const Experience = () => {
   }, [dispatch]);
 
   return (
-    <section className={styles.experience} id="experience">
+<section className={styles.experience} id="experience" style={{ padding: "8rem 0" }}>
       <div className="container">
-        <h2 className={styles.h2_heading}>Experience</h2>
+        <h2 style={{ 
+          fontSize: "clamp(2rem, 6vw, 3.5rem)", 
+          textAlign: "center", 
+          marginBottom: "4rem",
+          textTransform: "uppercase"
+        }}>Experience</h2>
 
-        {ExpItems.length === 0 ? (
-          <p>Loading experience...</p>
-        ) : (
-          ExpItems.slice(0, 5).map((ExpItem) => (
-            <ExperienceItem key={ExpItem.id} ExpItem={ExpItem} />
-          ))
-        )}
+        <div className="grid">
+          {ExpItems.length === 0 ? (
+            <p>Loading experience...</p>
+          ) : (
+            ExpItems.slice(0, 5).map((ExpItem) => (
+              <div key={ExpItem.id} className="card" style={{ padding: "2rem" }}>
+                <ExperienceItem ExpItem={ExpItem} />
+              </div>
+            ))
+          )}
+        </div>
 
-        <div className="row mt-5">
-          <div className="col-md-12">
-            <a
-              href="images/resume.pdf"
-              className={styles.resume_link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className={styles.resume}>View Full Résumé</span>
-              <span className={styles.arrow}>
-                <FaArrowRight />
-              </span>
-            </a>
-          </div>
+        <div style={{ 
+          textAlign: "center", 
+          marginTop: "4rem" 
+        }}>
+          <a
+            href="/images/resume.pdf"
+            className="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex", 
+              alignItems: "center", 
+              gap: "0.5rem",
+              background: "var(--glass-bg)",
+              backdropFilter: "var(--glass-blur)",
+              border: "1px solid var(--glass-border)",
+              padding: "1rem 2rem",
+              borderRadius: "var(--radius)",
+              color: "var(--text-primary)",
+              fontWeight: 600,
+              textDecoration: "none"
+            }}
+          >
+            View Full Résumé
+          </a>
         </div>
       </div>
     </section>

@@ -16,18 +16,26 @@ const Writing = () => {
   }, [dispatch]);
 
   return (
-    <section className={styles.writings} id="writing">
+    <section className={styles.writings} id="writing" style={{ padding: "8rem 0" }}>
       <div className="container">
-        <h2 className={styles.h2_heading}>Writing</h2>
+        <h2 style={{ 
+          fontSize: "clamp(2rem, 6vw, 3.5rem)", 
+          textAlign: "center", 
+          marginBottom: "4rem",
+          textTransform: "uppercase"
+        }}>Writing & Articles</h2>
 
-        {WrtItems.length === 0 ? (
-          <p>Loading writings...</p>
-        ) : (
-          WrtItems.slice(0, 3).map((WrtItem) => (
-            <WritingItems key={WrtItem.id} WrtItem={WrtItem} />
-          ))
-        )}
-
+        <div className="grid">
+          {WrtItems.length === 0 ? (
+            <p>Loading writings...</p>
+          ) : (
+            WrtItems.slice(0, 3).map((WrtItem) => (
+              <div key={WrtItem.id} className="card">
+                <WritingItems WrtItem={WrtItem} />
+              </div>
+            ))
+          )}
+        </div>
       </div>
     </section>
   );

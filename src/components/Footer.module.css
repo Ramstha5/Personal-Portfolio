@@ -1,18 +1,1 @@
-footer {
-  padding: 60px 0 0 0;
-  color: var(--primary-color);
-  font-size: 13px;
-  max-width: 400px;
-}
-.footer_highlights {
-  font-weight: 800;
-  transition: var(--transition);
-}
-.footer_highlights:hover {
-  color: var(--info-color);
-}
-@media (max-width: 575px) {
-  footer {
-    padding: 0;
-  }
-}
+
