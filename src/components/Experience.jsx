@@ -27,7 +27,7 @@ const Experience = () => {
           ))
         )}
 
-        <div className="row mt-lg-5 mt-md-4 mt-sm-2 mt-2">
+        <div className="row mt-lg-5 mt-md-4 mt-sm-3 mt-3">
           <div className="col-md-12">
             <a
               href="images/resume.pdf"

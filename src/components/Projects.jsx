@@ -16,7 +16,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className={`${styles.projects} my-lg-5 my-md-4 my-sm-2 my-2`} id="project">
+      <section className={`${styles.projects} my-lg-5 my-md-4 my-sm-3 my-3`} id="project">
         <div className="container">
           <h2 className={styles.h2_heading}>project</h2>
 
@@ -28,7 +28,7 @@ const Projects = () => {
             ))
           )}
 
-          <div className="row mt-5">
+          <div className="row mt-lg-5 mt-md-4 mt-sm-3 mt-3">
             <div className="col-md-12">
               <a
                 href="/project-list"
