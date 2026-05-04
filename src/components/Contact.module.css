@@ -3,6 +3,9 @@ h4{
    color: var(--primary-color);
    padding-top: 20px;
 }
+h4:first-child {
+   padding-top: 0;
+}
 .contact_btn {
   /* background-color: var(--white-color); */
   font-size: 16px;
