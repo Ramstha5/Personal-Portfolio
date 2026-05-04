@@ -2,6 +2,7 @@ h4{
    font-size: var(--fs-display-6);
    color: var(--primary-color);
    padding-top: 20px;
+   font-weight: 700;
 }
 h4:first-child {
    padding-top: 0;
