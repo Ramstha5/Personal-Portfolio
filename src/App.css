@@ -20,11 +20,11 @@
   --body-font-size: 16px;
   --transition: all 0.4s ease-in-out;
   --fs-display-1: clamp(1.5rem, 4vw, 3rem);
-  --fs-display-2: 1.2rem; /*clamp(24px, 4vw, 40px);*/
-  --fs-display-3: 1.001rem; /* clamp(18px, 4vw, 28px);*/
-  --fs-display-4: clamp(20px, 4vw, 24px);
-  --fs-display-5: clamp(18px, 5vw, 22px);
-  --fs-display-6: clamp(16px, 4vw, 18px);
+  --fs-display-2: 1.2rem;
+  --fs-display-3: 1.001rem;
+  --fs-display-4: clamp(20px, 2vw, 24px);
+  --fs-display-5: clamp(18px, 2vw, 22px);
+  --fs-display-6: clamp(16px, 2vw, 18px);
 }
 body {
   font-family: var(--secondary-font);
@@ -114,7 +114,25 @@ ol {
   margin-bottom: 0;
 }
 
-/* actual css start  */
+/* App Container and Overlay - Extracted from inline styles */
+.app-container {
+  background: var(--bg-color);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.reveal-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url('/images/data-science-portfolio-nepal.webp');
+  background-size: cover;
+  background-position: top;
+  /* clip-path set dynamically via JS */
+  transition: clip-path 0.6s ease;
+  pointer-events: none;
+  z-index: 9999;
+}
 
 .content_wrapper {
   display: flex;
@@ -133,8 +151,6 @@ main {
   margin-left: 48vw;
   width: 52vw;
 }
-
-/* actual css end  */
 
 @media (max-width: 991px) {
   .content_wrapper {

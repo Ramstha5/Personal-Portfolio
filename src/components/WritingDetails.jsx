@@ -3,9 +3,10 @@ import { useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { FaArrowLeft } from "react-icons/fa";
 import styles from "./WritingDetails.module.css";
-import { fetchWriting } from "../store/writingSlice"; // make sure this exists
+import PropTypes from "prop-types";
+import { fetchWriting } from "../store/writingSlice";
 
-const BACKEND_URL = "https://beby.pythonanywhere.com/";
+import { BACKEND_URL } from "../utils/constants";
 
 const WritingDetails = () => {
   const { id } = useParams();

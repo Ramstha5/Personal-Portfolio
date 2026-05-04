@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import styles from "./BottomMenu.module.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 const BottomMenu = () => {
+  BottomMenu.propTypes = {};
   const glowRef = useRef(null);
 
   useEffect(() => {

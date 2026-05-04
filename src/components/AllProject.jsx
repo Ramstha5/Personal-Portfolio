@@ -1,5 +1,6 @@
 
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import { FaArrowLeft } from "react-icons/fa";
 import styles from "./AllProject.module.css";
 import { useSelector, useDispatch } from "react-redux";
@@ -14,6 +15,8 @@ const AllProject = () => {
   useEffect(() => {
     dispatch(fetchProjects());
   }, [dispatch]);
+
+AllProject.propTypes = {};
 
   return (
     <>

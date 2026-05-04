@@ -1,0 +1,1 @@
+# TODO: Fix Home.jsx ReferenceError\n\n## Steps:\n1. ✅ Create TODO.md with plan steps\n2. Edit src/routes/Home.jsx to remove erroneous Home.propTypes declaration\n3. Verify error fixed in console\n4. Mark complete and attempt_completion

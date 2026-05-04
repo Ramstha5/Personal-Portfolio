@@ -1,11 +1,10 @@
-
-// export default Projects;
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import { FaArrowRight } from "react-icons/fa";
 import ProjectItem from "./ProjectItem";
-import { useSelector, useDispatch } from "react-redux"; // import dispatch
+import { useSelector, useDispatch } from "react-redux";
 import styles from "./Projects.module.css";
-import { fetchProjects } from "../store/projectSlice"; // import thunk
+import { fetchProjects } from "../store/projectSlice";
 
 const Projects = () => {
   const dispatch = useDispatch();

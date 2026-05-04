@@ -1,6 +1,5 @@
-
-
 import React, { useEffect } from "react";
+import PropTypes from "prop-types";
 import styles from "./Experience.module.css";
 import { FaArrowRight } from "react-icons/fa";
 import ExperienceItem from "./ExperienceItem";

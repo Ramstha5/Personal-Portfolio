@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import { useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchProjects } from "../store/projectSlice";
@@ -46,7 +47,7 @@ const ProjectDetails = () => {
         </Link>
 
         <div className={styles.projectCard}>
-          <div className="col-md-5 p-3 w-100" style={{ padding: 0 }}>
+          <div className="col-md-5 p-3 " style={{ padding: 0 }}>
             <img
               src={project.project_image}
               alt={project.title}
@@ -73,5 +74,7 @@ const ProjectDetails = () => {
     </section>
   );
 };
+
+ProjectDetails.propTypes = {};
 
 export default ProjectDetails;

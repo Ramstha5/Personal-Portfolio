@@ -25,7 +25,6 @@
   transform: translate(-10px, 0px);
 }
 
-/* ================= CARD ================= */
 .projectCard {
   padding: 40px;
   display: flex;
@@ -63,7 +62,7 @@
 
 /* ================= DESCRIPTION ================= */
 .projectDescription {
-  font-size: 1.1rem;
+  font-size: var(  --fs-display-6);
   line-height: 1.8;
   color: var(--primary-color);
   margin-bottom: 1.5rem;

@@ -1,5 +1,6 @@
 // src/routes/Home.jsx
 import React from "react";
+import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 
 import Profile from "../components/Profile";
@@ -10,10 +11,12 @@ import Writing from "../components/Writing";
 import Footer from "../components/Footer";
 import SpinnerImage from "../components/SpinnerImage";
 
+
+
 const Home = () => {
   return (
     <>
-      {/* ✅ SEO META ONLY (NO TITLE HERE) */}
+      {/* SEO META ONLY (NO TITLE HERE) */}
       <Helmet>
         {/* Primary Meta */}
         <meta
