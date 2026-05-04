@@ -47,7 +47,7 @@ const ProjectDetails = () => {
         </Link>
 
         <div className={styles.projectCard}>
-          <div className="col-md-5 p-3 " style={{ padding: 0 }}>
+          <div className="col-md-5 p-1 ">
             <img
               src={project.project_image}
               alt={project.title}

@@ -1,13 +1,13 @@
 // src/routes/Home.jsx
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 
 import Profile from "../components/Profile";
-import About from "../components/About";
-import Experience from "../components/Experience";
-import Projects from "../components/Projects";
-import Writing from "../components/Writing";
+const About = lazy(() => import("../components/About"));
+const Experience = lazy(() => import("../components/Experience"));
+const Projects = lazy(() => import("../components/Projects"));
+const Writing = lazy(() => import("../components/Writing"));
 import Footer from "../components/Footer";
 import SpinnerImage from "../components/SpinnerImage";
 
@@ -60,10 +60,12 @@ const Home = () => {
         <Profile />
 
         <main>
-          <About />
-          <Experience />
-          <Projects />
-          <Writing />
+<Suspense fallback={<div className="loading-fallback">Loading sections...</div>}>
+            <About />
+            <Experience />
+            <Projects />
+            <Writing />
+          </Suspense>
           <Footer />
         </main>
       </div>

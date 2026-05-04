@@ -12,13 +12,13 @@
   --white-color: #fff;
   --black-color: #000;
   --box-color: rgba(155, 159, 172, 0.1);
-  --box-shadow-color: 0 10px 25px rgba(0,0,0,0.25);;
+--box-shadow-color: 0 8px 20px rgba(0,0,0,0.15);
   --bg-color: #081428;
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Inter", sans-serif;
   --line-height: 1.6;
   --body-font-size: 16px;
-  --transition: all 0.4s ease-in-out;
+--transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   --fs-display-1: clamp(1.5rem, 4vw, 3rem);
   --fs-display-2: 1.2rem;
   --fs-display-3: 1.001rem;
@@ -112,6 +112,13 @@ ol {
 
 .page {
   margin-bottom: 0;
+}
+
+.loading-fallback {
+  padding: 2rem;
+  text-align: center;
+  color: var(--info-color);
+  font-size: var(--fs-display-4);
 }
 
 /* App Container and Overlay - Extracted from inline styles */

@@ -1,16 +1,19 @@
 // SpinnerImage.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./SpinnerImage.module.css";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchProjects } from "../store/projectSlice";
 
 const SpinnerImage = () => {
-  // Add descriptive names for each project/image
-  const offcanvasImage = [
-    { id: 1, image: "/images/data-science-portfolio-nepal-project.webp", name: "Machine Learning Project" },
-    { id: 2, image: "/images/data-science-portfolio-nepal-project.webp", name: "Python Data Analysis Project" },
-    { id: 3, image: "/images/data-science-portfolio-nepal-project.webp", name: "AI Research Project" },
-    { id: 4, image: "/images/data-science-portfolio-nepal-project.webp", name: "Computer Vision Demo" },
-  ];
+  const dispatch = useDispatch();
+
+  // Get projects from redux store
+  const offcanvasImage = useSelector((store) => store.project);
+
+  useEffect(() => {
+    dispatch(fetchProjects());
+  }, [dispatch]);
 
   return (
     <>
@@ -23,7 +26,10 @@ const SpinnerImage = () => {
           aria-controls="offcanvasBottom"
           aria-label="Open old projects gallery"
         >
-          <img src="/images/data-science-portfolio-nepal-spinner.gif" alt="Loading Ram Shrestha Portfolio" />
+          <img
+            src="/images/data-science-portfolio-nepal-spinner.gif"
+            alt="Loading Ram Shrestha Portfolio"
+          />
         </button>
       </div>
 
@@ -42,6 +48,7 @@ const SpinnerImage = () => {
             aria-label="Close gallery"
           />
         </div>
+
         <div className="offcanvas-body p-0">
           <section className={styles.hero}>
             <div className={styles.ellipse}></div>
@@ -55,31 +62,42 @@ const SpinnerImage = () => {
               </h1>
 
               <div className="row d-flex justify-content-center">
-                <div className="col-md-4 col-lg-5 col-sm-5 col-5">
+                <div className="col-md-4 col-lg-5 col-sm-8 col-10">
                   <div className="card-wrapper">
                     <div className="row">
-                      {offcanvasImage.map((item) => (
-                        <div
-                          key={item.id}
-                          className={`col-lg-6 col-md-6 col-sm-12 p-1 ${styles.img_wrapper}`}
-                        >
-                          <Link to="/">
-                            <div className={`${styles.offcanvas_card} card`}>
-                              <img
-                                src={item.image}
-                                alt={`Ram Shrestha - ${item.name}`}
-                                loading="lazy"
-                              />
-                            </div>
-                          </Link>
-                          <p className={styles.v}>v{item.id}</p>
-                        </div>
-                      ))}
+                      {offcanvasImage.length === 0 ? (
+                        <p className="text-white text-center">
+                          Loading projects...
+                        </p>
+                      ) : (
+                        offcanvasImage.slice(0, 4).map((item) => (
+                          <div
+                            key={item.id}
+                            className={`col-lg-6 col-md-6 col-sm-6 col-6 p-1 ${styles.img_wrapper}`}
+                          >
+                            
+                            <Link to={`/project/${item.id}`}  >
+                              <div
+                                className={`${styles.offcanvas_card} card`}
+                              >
+                                <img
+                                  src={item.project_image}
+                                  alt={`Ram Shrestha - ${item?.title}`}
+                                  loading="lazy"
+                                />
+                              </div>
+                            </Link>
+
+                            <p className={styles.v}>
+                              {item.name || `v${item.id}`}
+                            </p>
+                          </div>
+                        ))
+                      )}
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </section>
         </div>

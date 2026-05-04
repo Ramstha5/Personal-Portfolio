@@ -40,7 +40,7 @@
   /* Use the radial gradient here: */
 
   /* Optional soft glow: */
-  filter: blur(3px);
+  /* filter: blur(3px); // Reduced for performance */
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   transform-origin: center;
@@ -58,7 +58,7 @@
   animation: rotate1 20s linear infinite;
   opacity: 1;
 
-  box-shadow: 0 0 20px rgba(246, 107, 107, 0.8), 0 0 40px rgba(173, 17, 17, 0.8);
+  box-shadow: 0 0 12px rgba(246, 107, 107, 0.5), 0 0 24px rgba(173, 17, 17, 0.5); /* Lighter glow for perf */
 }
 
 .ellipse:nth-child(2) {
@@ -66,7 +66,7 @@
   height: 380px;
   animation: rotate2 12s linear infinite;
   opacity: 1;
-  box-shadow: 0 0 20px rgba(87, 228, 127, 0.8), 0 0 40px rgba(14, 173, 27, 0.8);
+  box-shadow: 0 0 12px rgba(87, 228, 127, 0.5), 0 0 24px rgba(14, 173, 27, 0.5); /* Lighter glow for perf */
 }
 
 .ellipse:nth-child(3) {
@@ -74,7 +74,7 @@
   height: 380px;
   animation: rotate3 35s linear infinite;
   opacity: 1;
-  box-shadow: 0 0 20px rgba(93, 96, 229, 0.8), 0 0 40px rgba(8, 30, 158, 0.8);
+  box-shadow: 0 0 12px rgba(93, 96, 229, 0.5), 0 0 24px rgba(8, 30, 158, 0.5); /* Lighter glow for perf */
 }
 
 .ellipse:nth-child(4) {
@@ -82,7 +82,7 @@
   height: 380px;
   animation: rotate4 45s linear infinite;
   opacity: 1;
-  box-shadow: 0 0 20px rgba(206, 205, 109, 0.8), 0 0 40px rgba(179, 198, 8, 0.8);
+  box-shadow: 0 0 12px rgba(206, 205, 109, 0.5), 0 0 24px rgba(179, 198, 8, 0.5); /* Lighter glow for perf */
 }
 
 /* Keyframes with alternating directions */
@@ -165,8 +165,6 @@
 }
 
 .offcanvas_card:hover {
-  filter: blur(3px);
-  transform: scale(1.05);
 }
 
 .v {
