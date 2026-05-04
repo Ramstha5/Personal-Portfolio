@@ -4,7 +4,7 @@ import { IoMdMail } from "react-icons/io";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact" id='contact'>
       <div className="container">
          <div className="row p-lg-3 p-2 px-md-5 pt-md-4 px-sm-4 px-2 ">
             <div className="col-lg-5">

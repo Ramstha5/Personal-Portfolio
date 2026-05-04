@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./Navbar.module.css";
 
-const sectionsIds = ["about", "experience", "project"];
+const sectionsIds = ["about", "experience", "project" ,'contact'];
 
 const Navbar = () => {
   const [activeId, setActiveId] = useState("about");
