@@ -16,7 +16,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className={styles.projects} id="project">
+      <section className={`${styles.projects} my-lg-5 my-md-4 my-sm-2 my-2`} id="project">
         <div className="container">
           <h2 className={styles.h2_heading}>project</h2>
 

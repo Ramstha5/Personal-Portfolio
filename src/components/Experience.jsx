@@ -15,7 +15,7 @@ const Experience = () => {
   }, [dispatch]);
 
   return (
-    <section className={styles.experience} id="experience">
+    <section className={`${styles.experience} py-lg-4 py-md-3 py-sm-2 py-2`} id="experience">
       <div className="container">
         <h2 className={styles.h2_heading}>Experience</h2>
 
@@ -27,7 +27,7 @@ const Experience = () => {
           ))
         )}
 
-        <div className="row mt-5">
+        <div className="row mt-lg-5 mt-md-4 mt-sm-2 mt-2">
           <div className="col-md-12">
             <a
               href="images/resume.pdf"
