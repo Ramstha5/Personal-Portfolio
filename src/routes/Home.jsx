@@ -7,11 +7,9 @@ import Profile from "../components/Profile";
 const About = lazy(() => import("../components/About"));
 const Experience = lazy(() => import("../components/Experience"));
 const Projects = lazy(() => import("../components/Projects"));
-const Writing = lazy(() => import("../components/Writing"));
 import Footer from "../components/Footer";
 import SpinnerImage from "../components/SpinnerImage";
-
-
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -27,7 +25,10 @@ const Home = () => {
         <meta name="robots" content="index, follow" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Ram Shrestha - Data Scientist Nepal" />
+        <meta
+          property="og:title"
+          content="Ram Shrestha - Data Scientist Nepal"
+        />
         <meta
           property="og:description"
           content="AI Engineer & Data Scientist in Kathmandu, Nepal specializing in Machine Learning, Python, and Data Analytics."
@@ -60,11 +61,15 @@ const Home = () => {
         <Profile />
 
         <main>
-<Suspense fallback={<div className="loading-fallback">Loading sections...</div>}>
+          <Suspense
+            fallback={
+              <div className="loading-fallback">Loading sections...</div>
+            }
+          >
             <About />
             <Experience />
             <Projects />
-            <Writing />
+            <Contact />
           </Suspense>
           <Footer />
         </main>

@@ -1,0 +1,36 @@
+h4{
+   font-size: var(--fs-display-6);
+   color: var(--primary-color);
+   padding-top: 20px;
+}
+.contact_btn {
+  /* background-color: var(--white-color); */
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  /* font-family: var(--apple-system); */
+  padding: 14px 15px;
+  transition: var(--transition);
+  display: inline-block;
+  color: var(--white-color);
+   background-color: var(--black-color);
+   border: 1px solid var(--bg-color);
+}
+.contact_btn svg {
+  margin-right: 8px;
+  font-size: 18px;
+  transition: var(--transition);
+}
+.contact_btn:hover {
+  border: 1px solid var(--white-color);
+  color: var(--primary-color);
+  background-color: transparent;
+   
+  
+}
+.contact_btn:hover svg {
+   color: var(--white-color);
+}
+.mail a{
+   cursor: pointer;
+}

@@ -10,11 +10,9 @@ import myStore from "./store/index.js";
 import App from "./App.jsx";
 import Home from "./routes/Home.jsx";
 import AllProject from "./components/AllProject.jsx";
-import ProjectDetails from "./components/ProjectDetails.jsx";
 import ExperienceDetails from "./components/ExperienceDetails.jsx";
 import SpinnerImage from "./components/SpinnerImage.jsx";
 import NotFound from "./components/NotFound.jsx";
-import WritingDetails from "./components/WritingDetails.jsx";
 
 // Router
 const router = createBrowserRouter([
@@ -25,9 +23,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "project-list", element: <AllProject /> },
       { path: "spinner", element: <SpinnerImage /> },
-      { path: "project/:id", element: <ProjectDetails /> },
       { path: "experience/:id", element: <ExperienceDetails /> },
-      { path: "/writing/:id", element: <WritingDetails /> },
     ],
   },
   { path: "*", element: <NotFound /> }, // catch-all

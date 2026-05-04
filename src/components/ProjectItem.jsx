@@ -78,7 +78,7 @@ const ProjectItem = ({ ProItem }) => {
           <div className={styles.project_body}>
             {/* Clickable Title */}
             <h3>
-              <Link to={`/project/${ProItem.id}`} className={styles.title}>
+              <Link to={ProItem?.link} className={styles.title}>
                 {ProItem?.title} <FaArrowRight className={styles.arrow} />
               </Link>
             </h3>
