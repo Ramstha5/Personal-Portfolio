@@ -12,7 +12,7 @@ const Contact = () => {
                   <img src="./images/data-science-portfolio-nepal.webp" alt="data-science-portfolio-nepal" />
                </div>
             </div>
-            <div className="col-lg-7">
+            <div className="col-lg-7 pt-md-4 pd-sm-4 pt-lg-0 pt-md-4 pt-sm-3 pt-3">
                <div className={styles.contact_info}>
                   <h4>Phone Number</h4>
                   <span className='text-white'>9800000000</span>
