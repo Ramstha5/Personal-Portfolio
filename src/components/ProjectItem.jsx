@@ -67,7 +67,7 @@ const ProjectItem = ({ ProItem }) => {
         {/* Project Image */}
         <div className={`col-md-4 pe-0${styles.project_img}`}>
           <div className={styles.project_image}>
-            <Link to={`/project/${ProItem.id}`} className={styles.title}>
+            <Link to={ProItem?.link} className={styles.title}>
               <img src={ProItem?.project_image} alt={ProItem?.title} />
             </Link>
           </div>
