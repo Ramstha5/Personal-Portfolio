@@ -24,7 +24,7 @@ const SocialMedia = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/ram-shrestha-43a93727b/"
+              href="https://www.linkedin.com/in/ram-shrestha-data-scientist/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn Profile"
