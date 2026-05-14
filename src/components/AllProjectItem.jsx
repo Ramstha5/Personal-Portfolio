@@ -13,7 +13,7 @@ const AllProjectItem = ({ item }) => {
 
       {/* Project Title - clickable */}
       <div className={`col-lg-3 col-md-6 col-10 ${styles.titles}`}>
-        <Link to={`/project/${item.id}`} className={styles.projectLink}>
+        <Link to={item?.link} className={styles.projectLink}>
           {item.title}
         </Link>
       </div>
@@ -36,7 +36,7 @@ const AllProjectItem = ({ item }) => {
 
       {/* Link section - navigate within app */}
       <div className={`col-lg-2 col-md-4 col-4 ${styles.links}`}>
-        <Link to={`/project/${item.id}`} className={styles.projectLink}>
+        <Link to={item?.link} className={styles.projectLink}>
           <span>View Project</span>
           <span className={styles.link_arrow}>
             <FaArrowRight />
