@@ -76,7 +76,7 @@ const SpinnerImage = () => {
                             className={`col-lg-6 col-md-6 col-sm-6 col-6 p-1 ${styles.img_wrapper}`}
                           >
                             
-                            <Link to={`/project/${item.id}`}  >
+                            <Link to={item?.link}  >
                               <div
                                 className={`${styles.offcanvas_card} card`}
                               >
