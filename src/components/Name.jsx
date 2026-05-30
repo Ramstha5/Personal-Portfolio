@@ -6,16 +6,15 @@ const Name = () => {
     <>
       <div className="container">
         <div className={styles.name_wrap}>
-          <h1 className={styles.name}>
-            Ram Shrestha - Data Scientist in Nepal
-          </h1>
-          <h2>AI Engineer Kathmandu</h2>
+          <h1 className={styles.name}>Ram Shrestha</h1>
+          <h2>Aspiring Data Scientist | Data Analyst Learner</h2>
           <p className="short_des" style={{ color: "#95a3be" }}>
-            Hello! I'm Ram Shrestha, a BCA student and aspiring Data Scientist from Kathmandu, Nepal.  
-            I specialize in Python, Machine Learning, and Data Analytics, and I enjoy building projects 
-            that turn raw data into meaningful insights and real-world solutions.  
-            I am continuously improving my skills in AI, Deep Learning, and Data Science to become a 
-            professional Machine Learning Engineer.
+            I am a BCA student and a beginner in Data Science from Kathmandu,
+            Nepal. I am currently learning Python, Data Analysis, Statistics,
+            and Machine Learning. I enjoy working with data and building small
+            projects to improve my skills and understanding of real-world
+            problems.My goal is to become a professional Data Scientist by
+            continuously learning, practicing, and building real projects.
           </p>
         </div>
       </div>
